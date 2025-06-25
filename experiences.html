@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover unique experiences at Nexus Hotels">
+    <title>Nexus Hotels | Experiences</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+        <p>Loading Nexus Experience...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                    <li><a href="experiences.html" class="nav-link active">Experiences</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-secondary">Book Now</button>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch">
+                    <label for="theme-switch" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <span class="theme-ball"></span>
+                    </label>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+            <button class="mobile-menu-close">&times;</button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                <li><a href="experiences.html" class="nav-link active">Experiences</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="booking.html" class="btn btn-secondary">Book Now</a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up">Immersive Experiences</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Beyond accommodation - discover curated moments that transform your stay</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="experiences-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Curated Experiences</h2>
+                <p class="section-description">From augmented reality city tours to private wellness retreats, we offer unique experiences tailored to your interests</p>
+            </div>
+            
+            <div class="experiences-grid">
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="experience-image">
+                        <img src="images/room4.jpg" alt="AR City Exploration" loading="lazy">
+                    </div>
+                    <div class="experience-content">
+                        <h3>AR City Exploration</h3>
+                        <p>Our augmented reality glasses overlay historical context, navigation, and personalized recommendations as you explore.</p>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="experience-image">
+                        <img src="images/wellness-retreat.webp" alt="Wellness Retreat" loading="lazy">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Private Wellness Retreat</h3>
+                        <p>Personalized wellness programs combining spa treatments, nutrition, and mindfulness practices.</p>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="experience-image">
+                        <img src="images/Culinary Masterclass.webp" alt="Culinary Masterclass" loading="lazy">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Culinary Masterclass</h3>
+                        <p>Learn from our Michelin-starred chefs in private cooking sessions with locally sourced ingredients.</p>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="experience-image">
+                        <img src="images/Rooftop Cinema.webp" alt="Rooftop Cinema" loading="lazy">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Rooftop Cinema</h3>
+                        <p>Private movie screenings under the stars with gourmet snacks and signature cocktails.</p>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="experience-image">
+                        <img src="images/Art & Culture Tour.webp" alt="Art & Culture Tour" loading="lazy">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Art & Culture Tour</h3>
+                        <p>Exclusive access to local galleries and cultural landmarks with expert guides.</p>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="experience-image">
+                        <img src="images/Sunset Yoga.webp" alt="Sunset Yoga" loading="lazy">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Sunset Yoga</h3>
+                        <p>Private yoga sessions on our rooftop with panoramic city views as the sun sets.</p>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Guest Experiences</h2>
+                <p class="section-description">What our guests say about our curated experiences</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The AR city tour completely transformed how we experienced the destination. It was like having a personal historian and guide with us at all times."</p>
+                    <div class="testimonial-author">
+                      
+                        <div>
+                            <h4>Michael T.</h4>
+                            <span>Travel Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The private wellness retreat was exactly what I needed. The combination of treatments, nutrition, and mindfulness practices was life-changing."</p>
+                    <div class="testimonial-author">
+                        
+                        <div>
+                            <h4>Sarah K.</h4>
+                            <span>Wellness Seeker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The culinary masterclass with Chef Laurent was the highlight of our trip. We learned techniques we've been using at home ever since."</p>
+                    <div class="testimonial-author">
+                        
+                        <div>
+                            <h4>David & Lisa</h4>
+                            <span>Food Lovers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready for an Unforgettable Experience?</h2>
+                <p>Book your stay today and let us craft personalized experiences just for you.</p>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+                    <p>Pioneering the future of hospitality through technology, sustainability, and unparalleled service.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="sustainability-report.html">Sustainability Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>We Accept</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <div class="app-download">
+                        <p>Download Our App</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="images/playstore.webp" alt="App Store"></a>
+                            <a href="#"><img src="images/playstore.webp" alt="Play Store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nexus Hotels. All rights reserved. | Designed for the future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/scroll-effects.js"></script>
+</body>
+</html>

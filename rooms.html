@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our luxurious rooms and suites at Nexus Hotels">
+    <title>Nexus Hotels | Rooms & Suites</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+        <p>Loading Nexus Experience...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="rooms.html" class="nav-link active">Rooms</a></li>
+                    <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-secondary">Book Now</button>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch">
+                    <label for="theme-switch" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <span class="theme-ball"></span>
+                    </label>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+            <button class="mobile-menu-close">&times;</button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="rooms.html" class="nav-link active">Rooms</a></li>
+                <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="booking.html" class="btn btn-secondary">Book Now</a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up">Our Rooms & Suites</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Where cutting-edge technology meets timeless comfort</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Luxury Redefined</h2>
+                <p class="section-description">Each space is designed with biophilic principles and equipped with the latest smart home technology.</p>
+            </div>
+            
+            <div class="rooms-grid">
+                <div class="room-card" data-aos="fade-up">
+                    <div class="room-image">
+                        <img src="images/room1.webp" alt="Urban Loft Room" loading="lazy">
+                        <div class="room-badge">Smart Room</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Urban Loft</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-ruler-combined"></i> 35 m²</span>
+                            <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                            <span><i class="fas fa-wifi"></i> 10Gbps</span>
+                        </div>
+                        <p>Minimalist design with smart glass windows and voice-controlled ambiance.</p>
+                        <div class="room-footer">
+                            <div class="room-price">From $299/night</div>
+                            <button class="btn btn-secondary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="room-image">
+                        <img src="images/room2.webp" alt="Sky View Suite" loading="lazy">
+                        <div class="room-badge">Best Seller</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Sky View Suite</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-ruler-combined"></i> 55 m²</span>
+                            <span><i class="fas fa-user-friends"></i> 2-3 Guests</span>
+                            <span><i class="fas fa-wifi"></i> 10Gbps</span>
+                        </div>
+                        <p>Floor-to-ceiling smart glass with AR city guide and mood lighting system.</p>
+                        <div class="room-footer">
+                            <div class="room-price">From $499/night</div>
+                            <button class="btn btn-secondary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="room-image">
+                        <img src="images/room3.webp" alt="Executive Pod" loading="lazy">
+                        <div class="room-badge">New</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Executive Pod</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-ruler-combined"></i> 25 m²</span>
+                            <span><i class="fas fa-user"></i> 1 Guest</span>
+                            <span><i class="fas fa-wifi"></i> 10Gbps</span>
+                        </div>
+                        <p>Compact luxury with sleep optimization technology and soundproof cocoon.</p>
+                        <div class="room-footer">
+                            <div class="room-price">From $199/night</div>
+                            <button class="btn btn-secondary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-aos="fade-up">
+                    <div class="room-image">
+                        <img src="images/Presidential Suite.jpg" alt="Presidential Suite" loading="lazy">
+                        <div class="room-badge">Luxury</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Presidential Suite</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-ruler-combined"></i> 120 m²</span>
+                            <span><i class="fas fa-user-friends"></i> 2-4 Guests</span>
+                            <span><i class="fas fa-wifi"></i> 10Gbps</span>
+                        </div>
+                        <p>Ultimate luxury with private terrace, spa bathroom, and 24/7 butler service.</p>
+                        <div class="room-footer">
+                            <div class="room-price">From $1,299/night</div>
+                            <button class="btn btn-secondary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="room-image">
+                        <img src="images/Biophilic Room.jpg" alt="Biophilic Room" loading="lazy">
+                        <div class="room-badge">Eco</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Biophilic Room</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-ruler-combined"></i> 40 m²</span>
+                            <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                            <span><i class="fas fa-leaf"></i> Eco</span>
+                        </div>
+                        <p>Nature-inspired design with living green walls and air purification system.</p>
+                        <div class="room-footer">
+                            <div class="room-price">From $349/night</div>
+                            <button class="btn btn-secondary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="room-image">
+                        <img src="images/Family Suite.jpg" alt="Family Suite" loading="lazy">
+                        <div class="room-badge">Family</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Family Suite</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-ruler-combined"></i> 75 m²</span>
+                            <span><i class="fas fa-user-friends"></i> 2 Adults + 2 Children</span>
+                            <span><i class="fas fa-child"></i> Kid-friendly</span>
+                        </div>
+                        <p>Spacious suite with separate children's area and family-friendly amenities.</p>
+                        <div class="room-footer">
+                            <div class="room-price">From $599/night</div>
+                            <button class="btn btn-secondary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Smart Room Features</h2>
+                <p class="section-description">Experience the future of hospitality with our innovative room technology</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Concierge</h3>
+                    <p>24/7 virtual assistant for room controls, recommendations, and service requests.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <h3>Climate Control</h3>
+                    <p>Automated systems that learn your preferences for optimal comfort.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Smart Bedding</h3>
+                    <p>Pressure-sensitive mattresses that adjust to your sleeping position.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Mood Lighting</h3>
+                    <p>Customizable lighting scenes for work, relaxation, or entertainment.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>Digital Shower</h3>
+                    <p>Precise temperature and flow control with personalized presets.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-window-maximize"></i>
+                    </div>
+                    <h3>Smart Windows</h3>
+                    <p>Electrochromic glass that adjusts tint based on sunlight and privacy needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready for an Unforgettable Stay?</h2>
+                <p>Book your room today and experience the future of hospitality.</p>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+                    <p>Pioneering the future of hospitality through technology, sustainability, and unparalleled service.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="sustainability-report.html">Sustainability Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>We Accept</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <div class="app-download">
+                        <p>Download Our App</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="images/playstore.webp" alt="App Store"></a>
+                            <a href="#"><img src="images/playstore.webp" alt="Play Store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nexus Hotels. All rights reserved. | Designed for the future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/scroll-effects.js"></script>
+</body>
+</html>

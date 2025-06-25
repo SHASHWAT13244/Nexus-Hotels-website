@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Nexus Hotels for inquiries and reservations">
+    <title>Nexus Hotels | Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+        <p>Loading Nexus Experience...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-secondary">Book Now</button>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch">
+                    <label for="theme-switch" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <span class="theme-ball"></span>
+                    </label>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+            <button class="mobile-menu-close">&times;</button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="booking.html" class="btn btn-secondary">Book Now</a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up">Contact Us</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Our team is available 24/7 to assist with your inquiries and reservations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>Our AI concierge is available 24/7 to assist with any inquiries or special requests.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>stay@nexushotels.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Future Avenue, Tech District, NY 10001</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="reservation">Reservation Inquiry</option>
+                                <option value="experience">Experience Inquiry</option>
+                                <option value="group">Group Booking</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Location</h2>
+                <p class="section-description">Visit us at our flagship location in the heart of the city</p>
+            </div>
+            
+            <div class="map-container" data-aos="fade-up" data-aos-delay="100">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573291234!2d-73.9878449240177!3d40.74844097138946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTkuMiJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Find answers to common questions about our hotel and services</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-card" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>What time is check-in and check-out?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Check-in time is at 3:00 PM and check-out is at 12:00 PM. Early check-in and late check-out may be available upon request, subject to availability.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>Do you offer airport transportation?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer luxury airport transfers in our electric vehicles. Please contact our concierge team to arrange transportation prior to your arrival.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>Is parking available at the hotel?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer valet parking for $50 per night, including EV charging stations. Limited self-parking is available in the adjacent garage for $35 per night.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-card" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Are pets allowed?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we're pet-friendly! We allow up to two pets per room with a $75 cleaning fee. Pets receive special amenities including a bed, bowls, and treats.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>What COVID-19 safety measures are in place?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We maintain enhanced cleaning protocols, UV sanitization of rooms between guests, touchless check-in options, and air purification systems throughout the property.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>Do you have facilities for events and meetings?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we have state-of-the-art meeting rooms and event spaces accommodating from 10 to 300 guests. Our events team can assist with all arrangements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+                    <p>Pioneering the future of hospitality through technology, sustainability, and unparalleled service.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="sustainability-report.html">Sustainability Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>We Accept</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <div class="app-download">
+                        <p>Download Our App</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="images/playstore.webp" alt="App Store"></a>
+                            <a href="#"><img src="images/playstore.webp" alt="Play Store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nexus Hotels. All rights reserved. | Designed for the future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/scroll-effects.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your stay at Nexus Hotels">
+    <title>Nexus Hotels | Book Now</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+        <p>Loading Nexus Experience...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-secondary">Book Now</button>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch">
+                    <label for="theme-switch" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <span class="theme-ball"></span>
+                    </label>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+            <button class="mobile-menu-close">&times;</button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <button class="btn btn-primary">Book Now</button>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up">Book Your Stay</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Experience the future of hospitality today</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-form" data-aos="fade-up">
+                    <h2 class="section-title">Reservation Details</h2>
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="check-in">Check-In</label>
+                                <input type="date" id="check-in" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="check-out">Check-Out</label>
+                                <input type="date" id="check-out" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="room-type">Room Type</label>
+                                <select id="room-type" required>
+                                    <option value="" disabled selected>Select Room</option>
+                                    <option value="urban-loft">Urban Loft</option>
+                                    <option value="sky-view">Sky View Suite</option>
+                                    <option value="executive-pod">Executive Pod</option>
+                                    <option value="presidential">Presidential Suite</option>
+                                    <option value="biophilic">Biophilic Room</option>
+                                    <option value="family">Family Suite</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Guests</label>
+                                <select id="guests" required>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2" selected>2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5+">5+ Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Check Availability</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="booking-summary" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Your Stay Summary</h3>
+                    <div class="summary-details">
+                        <div class="summary-item">
+                            <span>Check-In:</span>
+                            <span id="summary-checkin">Not selected</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Check-Out:</span>
+                            <span id="summary-checkout">Not selected</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Room Type:</span>
+                            <span id="summary-room">Not selected</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Guests:</span>
+                            <span id="summary-guests">2</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Estimated Total:</span>
+                            <span id="summary-total">$0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Access to all amenities</li>
+                            <li><i class="fas fa-check"></i> Free high-speed WiFi</li>
+                            <li><i class="fas fa-check"></i> Smart room technology</li>
+                            <li><i class="fas fa-check"></i> 24/7 AI concierge</li>
+                            <li><i class="fas fa-check"></i> Daily housekeeping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">Nexus<span>Hotels</span></a>
+                    <p>Pioneering the future of hospitality through technology, sustainability, and unparalleled service.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="sustainability-report.html">Sustainability Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>We Accept</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <div class="app-download">
+                        <p>Download Our App</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="images/playstore.webp" alt="App Store"></a>
+                            <a href="#"><img src="images/playstore.webp" alt="Play Store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nexus Hotels. All rights reserved. | Designed for the future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/scroll-effects.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
