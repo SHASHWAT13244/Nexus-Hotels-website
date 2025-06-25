@@ -4,7 +4,7 @@
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
 [![Responsive](https://img.shields.io/badge/Mobile--Responsive-00C896?style=for-the-badge)](#)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-ff69b4?style=for-the-badge&logo=github)]()
+[![Live Demo](https://img.shields.io/badge/Live-Demo-ff69b4?style=for-the-badge&logo=github)](https://nexus-hotels-website.onrender.com/)
 
 ---
 
@@ -76,7 +76,7 @@ Edit
 
 
 🌐 Live Demo
-🔗 
+🔗 https://nexus-hotels-website.onrender.com/
 
 🧑‍💻 Author
 Shashwat Khandelwal
